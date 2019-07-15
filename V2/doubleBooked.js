@@ -4,7 +4,6 @@ const isOverlappingUnordered = (a, b) => (a.start < b.end) && (b.start < a.end) 
 
 const createConflictName = (a, b) => a.title < b.title ? `${a.title}-${b.title}` : `${b.title}-${a.title}`
 
-// O(N + N^2) -> O(N^2)
 // this implementation does not sort first
 // avoid duplicates by placing pairs in a Set and then spreading onto an Array
 const doubleBooked = events => {

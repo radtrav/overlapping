@@ -13,7 +13,6 @@ const sortAscendingStart = events => events.sort((a, b) => {
     return a.title > b.title;
 });
 
-// O(Nlog(N) + N^2) -> O(N^2)
 // sorts first to avoid duplicates when comparing overlap
 const doubleBooked = _events => {
     const result = [];
